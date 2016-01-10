@@ -13,3 +13,4 @@ To generate HTML report execute command
 
 `test$ cucumber --format html -o report.html
 
+P.S.: Somehow file /test/env.rb had been missed by git during commitment. 
