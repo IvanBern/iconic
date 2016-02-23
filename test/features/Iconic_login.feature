@@ -7,9 +7,16 @@ Feature: Login
     When I login successfully
     Then I should be logged in
 
-  @login
+  @login_error
   Scenario: Login with wrong username
     Given I navigate to Home page
     When I login unsuccessfully
     Then I should see error message
 
+  @test
+  Scenario: Login successful2
+    Given I visit "HomePage"
+
+  @test
+  Scenario: Login successful3
+    Given I "login" on "HomePage"

@@ -48,6 +48,7 @@ Given(/^I navigate to Login page$/) do
 end
 
 When(/^I create new account$/) do
+
   on_page LoginFormPage do |page|
     page.new
   end
@@ -68,4 +69,23 @@ Then(/^Registration should be completed$/) do
   on_page HomePage do |page|
     page.registration_completed
   end
+end
+
+### parameter |page| is a name of the PageObject Class
+Given(/^I visit "([^"]*)"$/) do |page|
+  visit_page page
+end
+
+Given(/^I "([^"]*)" on "([^"]*)"$/) do |method, page|
+  #require 'active_support/inflector'
+  puts page
+  puts method
+ # page.constantize.send(method)
+  #page1 = page.constantize
+ # page1 = Object.const_get(page)
+
+ # on_page page do |page|
+ #   page.login
+ # end
+
 end
