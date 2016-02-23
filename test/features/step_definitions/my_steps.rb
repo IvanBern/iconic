@@ -33,7 +33,7 @@ end
 
 Then(/^I should be logged in$/) do
   on_page HomePage do |page|
-  raise TestCaseFailed, ("Unexpected user name: #{page.user}") unless page.user == "J T"
+  raise TestCaseFailed, ("Unexpected user name: #{page.user}") unless page.user == "JT"
   end
 end
 

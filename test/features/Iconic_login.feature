@@ -7,6 +7,7 @@ Feature: Login
     When I login successfully
     Then I should be logged in
 
+
   @login_error
   Scenario: Login with wrong username
     Given I navigate to Home page
